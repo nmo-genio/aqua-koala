@@ -39,6 +39,9 @@ I've designed the Koala buddy to reflect your hydration progress:
 
 - [Node.js](https://nodejs.org/) (Latest LTS recommended)
 - [npm](https://www.npmjs.com/) (Standard with Node.js)
+- **For iOS Development:**
+  - [Xcode](https://developer.apple.com/xcode/) (macOS only)
+  - [CocoaPods](https://cocoapods.org/) (`sudo gem install cocoapods`)
 
 ### Installation
 
@@ -60,6 +63,24 @@ npm run dev
 ```
 
 The application will be available at `http://localhost:5173/`.
+
+### Running on iOS
+
+To run the app on an iOS simulator or device:
+
+1. Build the web project:
+   ```bash
+   npm run build
+   ```
+2. Sync the code to the iOS project:
+   ```bash
+   npx cap sync ios
+   ```
+3. Open the project in Xcode:
+   ```bash
+   npx cap open ios
+   ```
+4. In Xcode, select your target device/simulator and click the **Run** button.
 
 ### Building for Production
 
